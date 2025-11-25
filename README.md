@@ -19,6 +19,9 @@ The script installs the Snapcast client binary, manages TinyCore dependencies, a
 3.  **Network Connected:** to download dependencies.
 4.  **SSH access works:** enable SSH in the pCP web interface (Main Page > Security > SSH tab) and log in.
 
+![PiCorePlayer SSH Enable](media/enable-ssh.png)
+*(enable from the SSH tab of the security settings page)*
+
 ## Understanding Audio on PiCorePlayer
 
 PiCorePlayer is designed for audiophile bit-perfect playback. To understand what this script does, it helps to know two ALSA (Linux Audio) terms:
@@ -78,12 +81,12 @@ Configure Squeezelite to share the audio device:
 5.  Click **Save** and **Restart Squeezelite**.
 
 ![Squeezelite Audio OutputSettings](media/audio-output.png)
-*(Caption: Ensure the Output Setting is set to a dmix device)*
+*(Ensure the Output Setting is set to a dmix device)*
 
 Note: you can list your available devices with `pcp -l` from the ssh session, or by browsing to the diagnostics page in the web interface:
 
 ![Squeezelite Diagnostics](media/output-device-diagnostics.png)
-*(Caption: List of available devices)*
+*(List of available devices)*
 
 ### 3. Enable Snapclient (Web Interface)
 
@@ -99,7 +102,7 @@ To make Snapclient start automatically on boot:
 4.  Click **Save**.
 
 ![User Commands](media/user-commands.png)
-*(Caption: Add the user command to the User Commands slot)*
+*(Add the user command to the User Commands slot)*
 
 ### 4. Reboot
 Reboot your device via the web interface, or from the command line with `pcp rb`. Upon restart, both services should be active.
@@ -154,7 +157,7 @@ This project was developed using the following documentation:
 
 ### Audio
 
-- [Squeezelite Man Page](https://ralph-irving.github.io/squeezelite.html)
+- [Squeezelite Main Page](https://ralph-irving.github.io/squeezelite.html)
 
 ## Credits
 
