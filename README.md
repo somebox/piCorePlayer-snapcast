@@ -8,7 +8,7 @@ Automated installer for [Snapcast Client](https://github.com/badaix/snapcast) on
 
 [PiCorePlayer](https://www.picoreplayer.org) is an easy way to turn a Raspberry Pi into a streaming music player for use with Home Assistant/Music Assistant or other media servers. It includes Squeezelite (LMS) and AirPlay support by default. This installer adds **Snapcast**, a low-latency multi-room audio solution that allows synchronized playback across multiple devices. 
 
-Snapcast is particularly handy for [Music Assistant](https://www.music-assistant.io/faq/stream-to/) users who want to stream to Raspberry Pis, Linux servers, [high quality embedded streaming devices](https://sonocotta.com/esparagus-hifi-medialink/) or DIY [ESP32-based clients](https://github.com/pschatzmann/arduino-snapclient).
+[Snapcast](https://github.com/badaix/snapcast) is particularly well-suited for [Music Assistant](https://www.music-assistant.io/faq/stream-to/) users who want to stream to Raspberry Pis, Linux servers, [high quality embedded streaming devices](https://sonocotta.com/esparagus-hifi-medialink/) or DIY [ESP32-based clients](https://github.com/pschatzmann/arduino-snapclient).
 
 The script installs the Snapcast client binary, manages TinyCore dependencies, and configures ALSA to allow Squeezelite and Snapclient to play audio simultaneously without device conflicts.
 
@@ -136,10 +136,11 @@ This project was developed using the following documentation:
 - [Snapcast Official Repository](https://github.com/badaix/snapcast/releases)
 - [Music Assistant Stream-to FAQ](https://www.music-assistant.io/faq/stream-to/)
 - [ESP32 Snapclient](https://github.com/CarlosDerSeher/snapclient)
-- [Arduino Snapclient](https://github.com/pschatzmann/arduino-snapclient)
+- [Arduino and ESP32 Snapclient](https://github.com/pschatzmann/arduino-snapclient)
 
 ### PiCorePlayer
 
+- [PiCorePlayer Official Website](https://www.picoreplayer.org)
 - [Getting Started Guide](https://docs.picoreplayer.org/getting-started/)
 - [Backup & Restore](https://docs.picoreplayer.org/information/pcp_backup/)
 - [DIY Extensions / Boot Scripts](https://docs.picoreplayer.org/information/picore_extensions/)
@@ -162,7 +163,11 @@ This installer was developed from scratch for PiCorePlayer 10.x, with reference 
 - [bjwelker's Snapcast-piCore](https://github.com/bjwelker/Snapcast-piCore)
 - [m-kloeckner's snapcast-tcz](https://github.com/m-kloeckner/snapcast-tcz)
 
-## Contributing
+## Roadmap and Contributions
+
+This project is being used to test a complex home audio setup with many open source devices. It might make sense to turn it into an integrated pCP extension in the future. If anyone is interested in helping with this, please let me know.
+
+There's more work to do on volume control and mixing, and Music Assistant has stability issues with Shairport Sync.
 
 Pull requests are welcome. For significant changes, please open an issue first to discuss the proposed changes.
 
