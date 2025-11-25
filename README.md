@@ -1,12 +1,14 @@
 # Snapclient Installer for PiCorePlayer
 
-Automated installer for [Snapcast Client](https://github.com/badaix/snapcast) on **PiCorePlayer 10.x** (TinyCore Linux 15.x).
+Automated installer for [Snapcast Client](https://github.com/badaix/snapcast) on **[PiCorePlayer 10.x](https://www.picoreplayer.org)** (TinyCore Linux 15.x).
 
 ![Example running with Music Assistant](media/music-assistant.png)
 
 ## What This Does
 
-PiCorePlayer includes Squeezelite (LMS) and AirPlay support by default. This installer adds **Snapcast**, a low-latency multi-room audio solution that allows synchronized playback across multiple devices. This is particularly useful for [Music Assistant](https://www.music-assistant.io/faq/stream-to/) users who want to stream to Raspberry Pis, Linux servers, [high quality embedded streaming devices](https://sonocotta.com/esparagus-hifi-medialink/) or DIY [ESP32-based clients](https://github.com/pschatzmann/arduino-snapclient).
+[PiCorePlayer](https://www.picoreplayer.org) is an easy way to turn a Raspberry Pi into a streaming music player for use with Home Assistant/Music Assistant or other media servers. It includes Squeezelite (LMS) and AirPlay support by default. This installer adds **Snapcast**, a low-latency multi-room audio solution that allows synchronized playback across multiple devices. 
+
+Snapcast is particularly handy for [Music Assistant](https://www.music-assistant.io/faq/stream-to/) users who want to stream to Raspberry Pis, Linux servers, [high quality embedded streaming devices](https://sonocotta.com/esparagus-hifi-medialink/) or DIY [ESP32-based clients](https://github.com/pschatzmann/arduino-snapclient).
 
 The script installs the Snapcast client binary, manages TinyCore dependencies, and configures ALSA to allow Squeezelite and Snapclient to play audio simultaneously without device conflicts.
 
